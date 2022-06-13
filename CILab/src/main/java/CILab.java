@@ -25,7 +25,7 @@ public class CILab implements CILabInterface {
                 return true;
             }
             else
-                return false;
+                it.next();
         }
         return false;
     }
