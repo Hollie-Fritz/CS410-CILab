@@ -43,6 +43,12 @@ public class CILabTest {
         assertEquals(true, myString.detectCapitalUse());
     }
 
+    @Test
+    public void detectCapitalUseTest4() {
+        myString.setString("Google");
+        assertEquals(true, myString.detectCapitalUse());
+    }
+
     @AfterAll
     static void tearDownAll(){
     }
