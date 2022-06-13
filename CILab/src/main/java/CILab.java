@@ -31,4 +31,3 @@ public class CILab implements CILabInterface {
     }
 
 }
-
