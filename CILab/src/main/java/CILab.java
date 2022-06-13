@@ -17,6 +17,16 @@ public class CILab implements CILabInterface {
 
     @Override
     public boolean detectCapitalUse() {
+        CharacterIterator it = new StringCharacterIterator(myString);
+
+        while (it.current() != CharacterIterator.DONE)
+        {
+            if(Character.isUpperCase(it.current())){
+                return true;
+            }
+            else
+                return false;
+        }
         return false;
     }
 
